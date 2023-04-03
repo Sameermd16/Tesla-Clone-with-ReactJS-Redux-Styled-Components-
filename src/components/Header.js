@@ -19,11 +19,11 @@ function Header() {
         <p><a href='#'>Powerwall</a></p>
         <p><a href='#'>Shop</a></p>
         <p><a href='#'>Account</a></p>
-        <p><a href='#'>Menu</a></p>
+        <p><a href='#' id='menuBtn'>Menu</a></p>
       </Menu>
 
-      <Section>
-        <IconClose></IconClose>
+      <Section id='mobileMenu'>
+        <IconClose id='closeBtn'></IconClose>
         <p><a href='#'>Existing Inventory</a></p>
         <p><a href='#'>Used Inventory</a></p>
         <p><a href='#'>Trade-in</a></p>
@@ -68,6 +68,7 @@ const Menu = styled.div`
     padding: 5px 15px;
     border-radius: 5px;
     font-size: 15px;
+    cursor: pointer;
   }
   p: hover {
     background: lightgrey;
@@ -84,6 +85,7 @@ const Section = styled.div`
   width: 300px;
   background-color: #f2f2f2;
   padding: 30px;
+  display: none;
   p {
     margin-bottom: 10px;
     padding: 5px 10px;
@@ -98,12 +100,26 @@ const Section = styled.div`
 
 
 const IconClose = styled(CloseIcon)`
-  
+  width: 100%;
   margin-left: 220px;
   margin-bottom: 40px;
   cursor: pointer;
-  // padding: 5px;
+  // padding: 2px;
   &: hover {
     background: lightgrey;
   }
 `;
+
+
+const menuBtn = document.getElementById('menuBtn');
+const mobileMenu = document.getElementById('mobileMenu');
+const closeBtn = document.getElementById('closeBtn');
+
+
+menuBtn.addEventListener('click', () => {
+  mobileMenu.style.display = 'block';
+})
+
+closeBtn.addEventListener('click', () => {
+  mobileMenu.style.display = 'none';
+})
