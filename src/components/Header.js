@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import CloseIcon from '@material-ui/icons/Close';
 
 function Header() {
   return (
@@ -20,6 +21,25 @@ function Header() {
         <p><a href='#'>Account</a></p>
         <p><a href='#'>Menu</a></p>
       </Menu>
+
+      <Section>
+        <IconClose></IconClose>
+        <p><a href='#'>Existing Inventory</a></p>
+        <p><a href='#'>Used Inventory</a></p>
+        <p><a href='#'>Trade-in</a></p>
+        <p><a href='#'>Demo Drive</a></p>
+        <p><a href='#'>Insurance</a></p>
+        <p><a href='#'>Cybertruck</a></p>
+        <p><a href='#'>Roadster</a></p>
+        <p><a href='#'>Semi</a></p>
+        <p><a href='#'>Charging</a></p>
+        <p><a href='#'>Commercial Energy</a></p>
+        <p><a href='#'>Utilities</a></p>
+        <p><a href='#'>Find Us</a></p>
+        <p><a href='#'>Support</a></p>
+        <p><a href='#'>Investor Relations</a></p>
+        <p><a href='#'>do this later</a></p>
+      </Section>
     </Container>
   )
 }
@@ -56,3 +76,34 @@ const Menu = styled.div`
   }
 `;
 
+const Section = styled.div`
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 300px;
+  background-color: #f2f2f2;
+  padding: 30px;
+  p {
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 15px;
+  }
+  p:hover {
+    background: lightgrey;
+    cursor: pointer;
+  }
+`;
+
+
+const IconClose = styled(CloseIcon)`
+  
+  margin-left: 220px;
+  margin-bottom: 40px;
+  cursor: pointer;
+  // padding: 5px;
+  &: hover {
+    background: lightgrey;
+  }
+`;
