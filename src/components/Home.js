@@ -7,52 +7,52 @@ function Home() {
     <Container>
         <Section 
           title='Model X'
-          description='Order Online for Touchless Delivery'
+          description='Leasing starting at $349/mo'
           backgroundImg='model-x.jpg'
-          leftBtnText='custom order'
-          rightBtnText='existing inventory'
+          leftBtnText='Custom Order'
+          rightBtnText='Existing Inventory'
         />
         <Section 
           title='Model Y'
           description='Order Online for Touchless Delivery'
           backgroundImg='model-y.jpg'
-          leftBtnText='custom order'
-          rightBtnText='existing inventory'
+          leftBtnText='Custom Order'
+          rightBtnText='Existing Inventory'
         />
         <Section 
           title='Model S'
           description='Order Online for Touchless Delivery'
           backgroundImg='model-s.jpg'
-          leftBtnText='custom order'
-          rightBtnText='existing inventory'
+          leftBtnText='Custom Order'
+          rightBtnText='Existing Inventory'
         />
         <Section 
           title='Model 3'
           description='Order Online for Touchless Delivery'
           backgroundImg='model-3.jpg'
-          leftBtnText='custom order'
-          rightBtnText='existing inventory'
+          leftBtnText='Custom Order'
+          rightBtnText='Existing Inventory'
         />
         <Section 
           title='Lowest Cost Solar Panels in America'
           description='Money-back guarantee'
           backgroundImg='solar-panel.jpg'
-          leftBtnText='order now'
-          rightBtnText='learn more'
+          leftBtnText='Order Now'
+          rightBtnText='Learn More'
         />
         <Section 
           title='Solar for New Roofs'
           description='Solar Roof Costs Less than a New Roof Plus Solar Panels'
           backgroundImg='solar-roof.jpg'
-          leftBtnText='order now'
-          rightBtnText='learn more'
+          leftBtnText='Order Now'
+          rightBtnText='Learn More'
         />
         <Section 
           title='Accessories'
           description=''
           backgroundImg='accessories.jpg'
-          leftBtnText='shop now'
-          rightBtnText='learn more'
+          leftBtnText='Shop Now'
+          rightBtnText=''
         />
     </Container>
   )
